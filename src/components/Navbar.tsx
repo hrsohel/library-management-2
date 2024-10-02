@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
      const path = usePathname()
      return (
-          <nav>
-               <ul className="flex items-center justify-center gap-4">
+          <nav className="user-nav">
+               <ul className="flex items-center justify-center gap-4 bg-[#0a298c] md:text-lg text-sm w-full">
                     <li className={path === "/" ? `dash`: ""}><Link href="/">Home</Link></li>
                     <li className={path === "/about" ? `dash`: ""}><Link href="/about">About</Link></li>
                     <li className={path === "/sign-up" ? `dash`: ""}><Link href="/sign-up">Sign up</Link></li>

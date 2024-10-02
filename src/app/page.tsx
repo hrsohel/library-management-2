@@ -3,21 +3,21 @@ import { FaSearch } from 'react-icons/fa';
 const page = () => {
   return (
     <>
-      <main className='h-screen'>
-        <div className="home-main h-[93.5vh] flex items-center justify-center flex-col">
-          <div className="flex gap-2 text-8xl text-white font-normal">
+      <main>
+        <div className="home-main h-[93vh] flex items-center justify-center flex-col">
+          <div className="flex gap-2 sm:text-8xl text-3xl text-white font-normal">
             <span>I</span>
             <span style={{transform: "rotateZ(-45deg)"}}>C</span>
             <span>E</span>
           </div>
-          <div>
-            <div className="flex items-center justify-center w-[30rem]">
-              <input className="w-[90%] border-none outline-none p-2 rounded-l-md" type="search" name="" id="search" placeholder="Search by book name or category"/>
-              <label htmlFor="search" className="w-[10%] bg-[#0a298c] p-[9px] rounded-r-md cursor-pointer">
+          <div className='sm:px-0 px-2'>
+            <div className="flex items-center justify-center md:w-[30rem] w-full sm:text-lg text-sm">
+              <input className="sm:w-[90%] w-[80%] border-none outline-none p-2 rounded-l-md" type="search" name="" id="search" placeholder="Search by book name or category"/>
+              <label htmlFor="search" className="sm:w-[10%] w-[20%] bg-[#0a298c] sm:p-[11px] p-[5px] rounded-r-md cursor-pointer">
                 <FaSearch style={{width: "100%", color: "#fff"}} size={35} />
               </label>
             </div>
-            <div className="w-[30rem] text-white p-2 bg-[#0a298c] mt-1 rounded-sm flex gap-2 flex-col h-[20rem] overflow-y-scroll">
+            <div className="md:text-lg text-sm md:w-[30rem] w-full text-white p-2 bg-[#0a298c] mt-1 rounded-sm flex gap-2 flex-col h-[20rem] overflow-y-scroll">
               <p>Database Management System</p>
               <p>Cryptography and Network Security</p>
               <p>Programming with Java and Networking</p>

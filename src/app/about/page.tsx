@@ -28,7 +28,7 @@ const page = () => {
                               <h3 className="text-lg font-semibold">Customization and Flexibility:</h3> Tailor the platform to suit the specific needs of your library, whether you manage a small community library or a large institutional one.
                          </div>
                     </div>
-                    <div className="p-4 bg-[#0a298c] text-white flex flex-col gap-3 rounded-md my-2">
+                    <div className="p-4 bg-[#0a298c] text-white flex flex-col gap-3 rounded-md my-2 md:mb-[2rem] mb-[2rem]">
                          <h2 className="text-xl border-b-2">Our Vision</h2>
                          <p>
                               We envision a future where libraries continue to play a central role in communities and academic institutions, adapting to the demands of the digital age while preserving their core mission of providing access to knowledge. Our vision is to become a trusted partner for libraries around the world, helping them evolve, innovate, and thrive.                    

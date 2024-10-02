@@ -29,3 +29,14 @@
   bottom: -1px;
   left: 0;
 }
+
+@media (max-width: 764px) {
+  .user-nav ul {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+  }
+}
