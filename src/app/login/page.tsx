@@ -1,19 +1,9 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
 import Link from 'next/link';
 
 const page = () => {
      return (
           <>
-               <header className="flex items-center justify-between px-4 bg-[#0a298c] py-2 text-white font-normal text-lg">
-                    <div className="flex gap-1 text-3xl font-semibold">
-                    <span>I</span>
-                    <span style={{transform: "rotateZ(-45deg)"}} className="text-red-500">C</span>
-                    <span>E</span>
-                    </div>
-                    <h2 className="text-center">Library Management</h2>
-                    <Navbar />
-               </header>
                <div className='home-main h-[93.5vh] flex items-center justify-center'>
                     <div className='glass-div w-[30rem] p-4 rounded-md'>
                          <h2 className='text-center text-xl mb-3 text-white'>Welcome</h2>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .home-main {
-  background: url("../public/images/bg img.png");
+  background: url("../../public/images/bg\ img.png");
   background-position: center;
   background-size: cover; 
   background-repeat: no-repeat;
@@ -13,4 +13,19 @@
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+}
+
+.dash {
+  position: relative;
+}
+
+.dash::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  color: white;
+  background-color: white;
+  bottom: -1px;
+  left: 0;
 }

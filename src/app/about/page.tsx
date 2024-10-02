@@ -1,17 +1,6 @@
-import Navbar from "@/components/Navbar";
-
 const page = () => {
      return (
           <>
-               <header className="flex items-center justify-between px-4 bg-[#0a298c] py-2 text-white font-normal text-lg">
-                    <div className="flex gap-1 text-3xl font-semibold">
-                    <span>I</span>
-                    <span style={{transform: "rotateZ(-45deg)"}} className="text-red-500">C</span>
-                    <span>E</span>
-                    </div>
-                    <h2 className="text-center">Library Management</h2>
-                    <Navbar />
-               </header>
                <h1 className="text-center text-2xl font-semibold my-2">About Us</h1>
                <div className="py-4 sm:px-8 px-2">
                     <div className="p-4 bg-[#0a298c] text-white flex flex-col gap-3 rounded-md">
