@@ -1,8 +1,8 @@
 "use client"
 import React, {useState} from "react";
-import ProfileSideBar from "@/components/ProfileSideBar";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
+import ProfileSideBar from "@/components/ProfileSideBar";
 
 export default function RootLayour({children}: {children: React.ReactNode}) {
      const [show, setShow] = useState(true)

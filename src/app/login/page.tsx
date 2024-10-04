@@ -9,7 +9,7 @@ const page = () => {
                          <h2 className='text-center text-xl mb-3 text-white'>Welcome</h2>
                          <form action="" method="post">
                               <input className='w-full p-1 md:text-lg text-sm rounded-md' type="email" name="" id="" placeholder='Enter email' />
-                              <input className='w-full p-1 md:text-lg text-sm rounded-md mt-8' type="password" name="" id="" placeholder='Enter password' />
+                              <input className='w-full p-1 md:text-lg text-sm rounded-md md:mt-8 mt-2' type="password" name="" id="" placeholder='Enter password' />
                               <button className='my-2 bg-[#0a298c] md:text-lg text-sm text-white px-3 py-1 rounded-sm' type="submit">Login</button>
                          </form>
                          <span className='text-white my-2 md:text-lg text-sm'>

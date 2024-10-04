@@ -12,11 +12,11 @@ const page = () => {
                                    <input className='w-full p-1 md:text-lg text-sm rounded-md' type="text" name="" id="" placeholder='Full name' />
                                    <input className='w-full p-1 md:text-lg text-sm rounded-md' type="email" name="" id="" placeholder='Enter email' />
                               </div>
-                              <div className='flex items-center justify-between md:gap-3 gap-1 md:flex-nowrap flex-wrap'>
+                              <div className='flex items-center justify-between md:gap-3 gap-1'>
                                    <input className='w-full p-1 md:text-lg text-sm rounded-md md:mt-8 mt-2' type="text" name="" id="" placeholder='Enter post code' />
                                    <input className='w-full p-1 md:text-lg text-sm rounded-md md:mt-8 mt-2' type="tel" name="" id="" placeholder='Enter phone number' />
                               </div>
-                              <div className='flex items-center justify-between md:gap-3 gap-1 md:flex-nowrap flex-wrap'>
+                              <div className='flex items-center justify-between md:gap-3 gap-1'>
                                    <input className='w-full p-1 md:text-lg text-sm rounded-md md:mt-8 mt-2' type="password" name="" id="" placeholder='Enter password' />
                                    <input className='w-full p-1 md:text-lg text-sm rounded-md md:mt-8 mt-2' type="password" name="" id="" placeholder='Re-enter password' />
                               </div>
