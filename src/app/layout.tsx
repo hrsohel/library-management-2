@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import "./globals.css"
 
 export const metadata: Metadata = {
-     title: "Login"
+     title: "Library Management"
 }
 
 export default function RootLayout({children}: {children: React.ReactElement}) {

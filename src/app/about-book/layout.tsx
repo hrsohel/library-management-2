@@ -1,11 +1,5 @@
 import React from "react"
-import {Metadata} from "next"
 import Navbar from "@/components/Navbar"
-
-export const metadata: Metadata = {
-     title: "Java book details",
-     description: "This Library Management's single book Page",
-}
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
      return (

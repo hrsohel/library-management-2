@@ -1,16 +1,16 @@
+"use client"
 import React from "react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-     title: "Admin Page (All books)",
-     description: "This is Admin page of Library Management project"
-}
+import { Provider } from "react-redux";
+import store from "../../../redux/store";
 
 export default function AdminLayout(
      {adminSideBar, adminMainRighSide}: 
      {adminSideBar: React.ReactNode, adminMainRighSide: React.ReactNode}) {
+     if(typeof document !== "undefined") {
+          document.title = "Admin page / (All books)"
+     }
      return (
-          <>
+          <Provider store={store}>
                <header className="flex items-center justify-between md:px-4 px-0 bg-[#0a298c] py-2 text-white font-normal text-lg">
                     <div className="flex gap-1 md:text-3xl text-xl font-semibold ml-2 md:ml-0">
                          <span>I</span>
@@ -23,6 +23,6 @@ export default function AdminLayout(
                     {adminSideBar}
                     {adminMainRighSide}
                </section>
-          </>
+          </Provider>
      )
 }

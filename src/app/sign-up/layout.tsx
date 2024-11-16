@@ -4,7 +4,7 @@ import "../globals.css"
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-     title: "Login"
+     title: "Sign up"
 }
 
 export default function RootLayout({children}: {children: React.ReactElement}) {
