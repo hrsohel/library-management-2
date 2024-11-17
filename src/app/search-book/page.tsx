@@ -11,7 +11,7 @@ interface Context {
 const page = async (context: Context) => {
      const search = context.searchParams.search
      const bookdata: bookDataType[] = []
-     const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/search-book?search=${search}`, {
+     const response = await fetch(`${process.env.API_URL}/api/search-book?search=${search}`, {
           // next: {tags: [search]}
           cache: "no-store"
      })

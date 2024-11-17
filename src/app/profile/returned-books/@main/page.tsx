@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 const Page = () => {
      const [bookdata, setBookData] = useState<bookDataType[]>([])
      const router = useRouter()
+     const [loading, setLoading] = useState(true)
      useEffect(() => {
           const getData = async() => {
                const cookie = Cookies.get("user-cookie")
@@ -23,13 +24,14 @@ const Page = () => {
                     setBookData(data)
                }
           }
+          setLoading(false)
           getData()
      }, [])
      return (
           <>
                <div className='w-full py-4 rounded-md bg-slate-300 h-full md:gap-3 gap-1 overflow-y-scroll flex items-start justify-center flex-wrap'>
                     {
-                         bookdata && bookdata.map((value: bookDataType) => <div key={value._id} className='bg-white md:p-3 p-1 rounded-md w-[10rem] md:w-[15rem] md:hover:-translate-y-3 duration-500 '>
+                         !loading && bookdata && bookdata.map((value: bookDataType) => <div key={value._id} className='bg-white md:p-3 p-1 rounded-md w-[10rem] md:w-[15rem] md:hover:-translate-y-3 duration-500 '>
                               <div className='w-full md:h-[15rem] h-[10rem]'>
                                    <Image src={value.image ? value.image : "/images/bg img.png"} alt={`${value.name} image`} className='w-full h-full ' width="1000" height="1000" />
                               </div>
@@ -41,6 +43,13 @@ const Page = () => {
                                    <p><span className='text-red-600 font-semibold'>Date: </span> {new Date(value.createdAt as string).toDateString()}</p>
                               </div>
                          </div>)
+                    }
+                    {
+                         loading ? <>
+                              <div className='w-[0.8rem] h-[0.8rem] bg-[#0a298c] rounded-full bigger'></div>
+                              <div className='w-[0.8rem] h-[0.8rem] bg-[#0a298c] rounded-full bigger'></div>
+                              <div className='w-[0.8rem] h-[0.8rem] bg-[#0a298c] rounded-full bigger'></div>
+                         </> : <></>
                     }
                     <div className='h-[2rem] w-full md:hidden block'></div>
                </div>

@@ -1,6 +1,7 @@
 "use server"
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { revalidateTag } from "next/cache";
+import {redirect} from "next/navigation"
 
 export async function getDecodedToken(cookie: any): Promise<JwtPayload | null> {
      const secret = process.env.JWT_SECRET as string
@@ -45,4 +46,12 @@ export async function takeBackBook(formData: FormData) {
           }
      })
      await response.json()
+}
+
+export async function searchBook(formData: FormData) {
+     const search = formData.get("search")
+     console.log(search);
+     
+     if(search)
+          redirect(`/search-book?search=${search}`)
 }
