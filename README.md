@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# **Library Management System**
 
-## Getting Started
+A comprehensive library management system that simplifies the process of book borrowing and returning. Users can search for books, request them for a specified duration, and return issued books. Admins have the authority to issue and manage book requests.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## **Features**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **User Features:**
+- **Authentication:**
+  - Secure user registration and login system.
+- **Book Search:**
+  - Search for available books using keywords.
+- **Book Request:**
+  - Request books for a specified number of days.
+- **Book Return:**
+  - Return issued books once the requested duration has elapsed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Admin Features:**
+- **Request Management:**
+  - View and process book requests.
+  - Issue books to users based on their requests.
+- **Return Management:**
+  - Manage returned books and update their availability in the system.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## **Tech Stack**
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:**
+  - **React.js**: For building a dynamic and user-friendly interface.
+  - **Tailwind CSS**: For clean and modern design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Backend:**
+  - **Node.js**: For server-side functionality.
+  - **Express.js**: For building RESTful APIs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Database:**
+  - **MongoDB**: For managing book and user data efficiently.
 
-## Deploy on Vercel
+---
+## **Login**
+-**Email: ** sohel@gmail.com
+-**Password: ** sohel
+---
+#To redirect to admin page: visit /admin route#
+## **Installation and Setup**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Prerequisites**
+Ensure the following are installed:
+- Node.js
+- MongoDB
