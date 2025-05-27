@@ -19,7 +19,7 @@ const useHookForUserInfo = () => {
                    sessionStorage.setItem("userData", JSON.stringify(data))
               } else return userData
           } catch (error: any) {
-              console.error('Error fetching user data:', error);
+              console.error('Error fetching user data with details:', error);
           }
       };
      useEffect(() => {
