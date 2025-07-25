@@ -19,6 +19,7 @@ const Navbar = () => {
                <ul className="flex items-center relative md:justify-center justify-around gap-4 bg-[#0a298c] md:text-lg text-[0.9rem] w-full">
                     <li onClick={() => setLoading(true)} className={path === "/home" ? `dash`: ""}><Link href="/home">Home</Link></li>
                     <li onClick={() => setLoading(true)} className={path === "/about" ? `dash`: ""}><Link href="/about">About</Link></li>
+                    <li onClick={() => setLoading(true)} className={path === "/books" ? `dash`: ""}><Link href="/books">All books</Link></li>
                     {
                          cookie ? <>
                          <li onClick={() => setLoading(true)} className={path === "/profile/requested-books" ? `dash`: ""}><Link href="/profile/requested-books">Profile</Link></li>
